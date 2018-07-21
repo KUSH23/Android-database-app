@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardBackgroundColor="@color/cardview_shadow_end_color"
+    android:paddingBottom="60dp"
+    tools:context="com.example.kushal.leandigit1.tableAdapters.CustomerOrder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textorder_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textorder_date"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="12dp"
+        android:text="order_id" />
+
+    <TextView
+        android:id="@+id/textcustomer_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="customer_id" />
+
+    <TextView
+        android:id="@+id/textorder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textcustomer_id"
+        android:layout_below="@+id/textcustomer_id"
+        android:layout_marginTop="12dp"
+        android:text="order_date" />
+
+    <TextView
+        android:id="@+id/textexpected_dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textorder_id"
+        android:layout_alignBottom="@+id/textorder_id"
+        android:layout_alignStart="@+id/textorder_date"
+        android:text="expected_dd" />
+
+    <TextView
+        android:id="@+id/textcommited_dd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textexpected_dd"
+        android:layout_below="@+id/textexpected_dd"
+        android:layout_marginTop="16dp"
+        android:text="commited_dd" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textorder_id"
+        android:layout_below="@+id/textcustomer_id"
+        android:text="Order ID"
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

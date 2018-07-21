@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!-- suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kushal.leandigit1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/leandigitlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/leandigitlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ListActivities" />
+        <activity android:name=".FeedActivity" />
+        <activity android:name=".addProcess" />
+        <activity android:name=".tableAdapters.Users" />
+        <activity android:name=".tableAdapters.PRo_cess" />
+        <activity android:name=".tableAdapters.CustomerOrder" />
+        <activity android:name=".tableAdapters.Customers" />
+        <activity android:name=".tableAdapters.InflowRequirements" />
+        <activity android:name=".tableAdapters.Materials" />
+        <activity android:name=".tableAdapters.MaterialCreationConsumption" />
+        <activity android:name=".tableAdapters.MaterialFlowBalance" />
+        <activity android:name=".tableAdapters.MaterialGroup" />
+        <activity android:name=".tableAdapters.Orders" />
+        <activity android:name=".tableAdapters.OutflowRequirements" />
+        <activity android:name=".tableAdapters.OrderPropagation" />
+        <activity android:name=".tableAdapters.OrderRecord" />
+        <activity android:name=".tableAdapters.PMG" />
+        <activity android:name=".tableAdapters.PmgExecution" />
+        <activity android:name=".addCustomer" />
+        <activity android:name=".addCustomerOrder" />
+        <activity android:name=".addMaterial" />
+        <activity android:name=".Register" />
+        <activity android:name=".addPMG" />
+        <activity android:name=".addOrders"></activity>
+    </application>
+
+</manifest>
